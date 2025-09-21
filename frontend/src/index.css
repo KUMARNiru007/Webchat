@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/src/assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  image-rendering: -webkit-optimize-contrast; /* improves sharpness in Chrome */
+  image-rendering: crisp-edges;
+}
