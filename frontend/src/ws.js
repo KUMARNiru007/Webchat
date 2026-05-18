@@ -1,5 +1,6 @@
 import {io} from 'socket.io-client'
 
 export function connectWS() {
-    return io('http://localhost:3000')
+    const url = import.meta.env.DEV ? 'http://localhost:3000' : window.location.origin
+    return io(url)
 }
